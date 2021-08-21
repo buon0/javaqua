@@ -1,0 +1,21 @@
+
+    #wrap{width: 1050px; margin: 0 auto; min-height: 20vh;}
+    .container{width: 640px; margin: 0 auto;}
+
+    .tit{padding-top: 10px; font-weight: 900; font-size: 30px; color: #333; text-align: center; letter-spacing: -2.5px;}
+    .sub{font-size: 12px; color: #666; line-height: 17px; text-align: right;}
+    .ico{padding-right: 2px; color: #ee6a7b;}
+
+    .tbl_comm{width: 100%; border-top: 2px solid #333; }
+    .tbl_comm th{width: 159px; font-size: 14px; text-align: left; letter-spacing:-1px;}
+    .tbl_comm td{padding: 10px 0 10px;}
+    .tbl_comm .inputText{width: 332px; height: 44px; padding: 0 14px; border: 1px solid #ccc; color: #333; font-weight: 200; letter-spacing:-1px}
+    .tbl_comm .input_chk{padding:0 14px; border: 1px solid #ccc; width: 25px; height: 25px;}
+    .tbl_comm .chkText {position: relative; bottom: 7px; font-size: 14px; letter-spacing: -2px;}
+    .tbl_comm label {cursor: pointer;}
+    .tbl_comm .btn_conf{position: relative; top: 1.6px; border: 1px solid #005DDE; background: #fff; color: #005DDE; width: 80px; height: 46px; letter-spacing:-1px; cursor: pointer;}
+    .tbl_comm .btn_call{position: relative; top: 1.6px; border: 1px solid #ddd; background: #fff; color: #ddd; width: 80px; height: 46px; letter-spacing:-1px; cursor: pointer;}
+    .tbl_comm .btn_address{width: 362px; padding: 0 14px; height: 46px; border: 1px solid #005DDE; background: #fff; color: #005DDE; letter-spacing:-1px; cursor: pointer;}
+    .btn_join{width: 250px; padding: 0 14px; height: 46px; border: 1px solid #005DDE; background: #005DDE; color: #fff; letter-spacing:-1px; cursor: pointer; text-align: center;}
+    .tbl_comm .terms{float: right; color: #005DDE; font-size: 14px; letter-spacing: -2px; cursor: pointer;}
+

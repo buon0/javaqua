@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/join.css" />
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div class="container">
+                <h3 class="tit">회원가입</h3>
+                <form name="fmData" method="post" action="">
+                    <table class="tbl_comm">
+                        <tbody>
+                            <tr>
+                                <th>아이디</th>
+                                <td>
+                                    <input type="text" name="id" maxlength="16" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합" class="inputText">
+                                    <button type="button" class="btn_conf" onclick="id_conf()" style="bottom: 2px;">중복확인</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호</th>
+                                <td>
+                                    <input type="password" name="password" maxlength="16" placeholder="비밀번호를 입력해주세요" class="inputText">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호확인</th>
+                                <td>
+                                    <input type="password" name="password2" maxlength="16" placeholder="비밀번호를 한번 더 입력해주세요" class="inputText">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이름</th>
+                                <td>
+                                    <input type="text" name="name" maxlength="6" placeholder="이름을 입력해주세요" class="inputText">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <input type="text" name="email" maxlength="20" placeholder="예:javacua@javacua.com" class="inputText">
+                                    <button type="button" class="btn_conf" onclick="email_conf()">중복확인</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>휴대폰</th>
+                                <td>
+                                    <input type="text" name="phone" maxlength="11" placeholder="숫자만 입력해주세요" class="inputText">
+                                    <button type="button" class="btn_call" onclick="singup()">인증번호</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>주소</th>
+                                <td>
+                                    <button type="button" class="btn_address" name="address">주소 검색</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>이용약관동의</th>
+                                <td>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" name="chk_all" class="input_chk"> 
+                                            <sapn class="chkText">전체 동의합니다.</sapn>                                       
+                                        </label>
+                                        <a class="terms">약관보기></a>
+                                    </div>  
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" name="chk1" class="input_chk"> 
+                                            <sapn class="chkText">이용약관 동의 (필수)</sapn>                                        
+                                        </label>
+                                        <a class="terms">약관보기></a>
+                                    </div>       
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" name="chk2" class="input_chk"> 
+                                            <sapn class="chkText">개인정보 수집 및 이용 동의 (필수)</sapn>
+                                        </label>
+                                        <a class="terms">약관보기></a>
+                                    </div>      
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" name="chk3" class="input_chk"> 
+                                            <sapn class="chkText">마케팅 수신 동의 (선택)</sapn>
+                                        </label>
+                                        <a class="terms">약관보기></a>
+                                    </div>    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div style="text-align: center; margin-top: 30px;">
+                    <button type="button" class="btn_join" onclick="frm_check()">가입하기</button>
+                </div>              
+            </div>
+        </div>
+
+
+        <script>
+            //아이디,이메일 중복확인검증 (최종적으로 ture 이여야만 가입가능 , 값이바뀌면 다시 false)
+            let idConf = false;
+            let emainConf = false;
+
+            //아이디 중복확인
+            function id_conf(){
+                const id = $("input[name=id]").val();
+                if (id==""){alert("아이디를 입력해 주세요"); return;}
+                if (id.length < 6){alert("아이디는 6자 이상만 가능합니다."); return;}
+                idConf=true;
+                alert("사용 가능합니다.");
+            }
+            //이메일 중복확인
+            function email_conf(){
+                const email = $("input[name=email]").val();
+                if (email==""){alert("이메일을 입력해 주세요"); return;}
+                emainConf=true;
+                alert("사용 가능합니다.");
+            }
+            //휴대폰 자릿수 맞으면 인증번호버튼 활성화
+            function phoneChk(){
+                const phone = $("input[name=phone]").val();
+                if(phone!="" && phone.length >= 10){
+                    $(".btn_call").css("border","1px solid #005DDE").css("color","#005DDE");
+                }else{
+                    $(".btn_call").css("border","1px solid #ddd").css("color","#ddd");
+                }
+            }
+            //인증번호
+            function singup(){
+                const phone = $("input[name=phone]").val();
+                if(phone!="" && phone.length >= 10){
+                    alert("인증번호를 발송했습니다.");
+                }         
+            }
+            //전체동의
+            function allChk(obj){
+                const allObj="input[name=chk1],input[name=chk2],input[name=chk3]";
+
+                if ($(obj).is(":checked") == true) { //전체동의체크
+                    $(allObj).prop("checked" , true);
+                }else{ //전체동의체크해제
+                    $(allObj).prop("checked" , false);
+                }
+            }
+            //가입 전 양식체크
+            function frm_check(){
+                if(!idConf){alert("아이디 중복확인을 해주세요");return;}
+                if( $("input[name=password]").val()!=$("input[name=password2]").val() ){alert("비밀번호가 서로 다릅니다.");return;}
+                if(!emainConf){alert("이메일 중복확인을 해주세요");return;}
+                if ($("input[name=name]").val()==""){alert("이름을 입력해 주세요."); return;}
+                if ($("input[name=phone]").val()=="" || $("input[name=phone]").val().length >= 10 ){alert("휴대폰 번호를 입력해 주세요."); return;}
+                if($("input[name=chk1]").is(":checked") == false || $("input[name=chk2]").is(":checked") == false){alert("필수 이용약관동의에 체크해 주세요.");return;}
+            }
+
+            $(function(){
+                //전체동의 체크시
+                $("input[name=chk_all]").click(function(){
+                    allChk(this);
+                });
+
+                $("input[name=id]").change(function(){ 
+                    idConf=false;
+                });
+
+                //숫자만 입력가능
+                $("input[name=phone]").on("keyup", function() {
+                    $(this).val($(this).val().replace(/[^0-9]/g,""));
+                    phoneChk();
+                });
+
+            });
+
+        </script>
+    </body>
+</html>
