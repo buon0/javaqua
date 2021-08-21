@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="이미지/로고/자바쿠아 아이콘.jpg" rel="shortcut icon" type="image/x-icon">
+    <title>JavaQua</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $('.bx-prev img').mouseover(function(){
+                $(this).attr("src","이미지/화살표/왼쪽.gif")
+            });
+            $('.bx-prev img').mouseout(function(){
+                $(this).attr("src","이미지/화살표/왼쪽 누르기전.gif")
+            });
+            $('.bx-next img').mouseover(function(){
+                $(this).attr("src","이미지/화살표/오른쪽.gif")
+            });
+            $('.bx-next img').mouseout(function(){
+                $(this).attr("src","이미지/화살표/오른쪽 누르기전.gif")
+            })
+            // $('.bx-prev_2 img').mouseover(function(){
+            //     $(this).css("opacity","0.4")
+            // })
+            // $('.bx-prev_2 img').mouseout(function(){
+            //     $(this).css("opacity","0")
+            // })
+            // $('.bx-next_2 img').mouseover(function(){
+            //     $(this).css("opacity","0.4")
+            // })
+            // $('.bx-next_2 img').mouseout(function(){
+            //     $(this).css("opacity","0")
+            // })
+            $('.bx-sale').mouseover(function(){
+                $('.bx-controls .bx-prev_2 img').css("opacity","0.4");
+                $('.bx-controls .bx-next_2 img').css("opacity","0.4");
+            })
+            $('.bx-sale').mouseout(function(){
+                $('.bx-controls .bx-prev_2 img').css("opacity","0");
+                $('.bx-controls .bx-next_2 img').css("opacity","0");
+            })
+            $('#main_logo').mouseover(function(){
+                $(this).attr("src","이미지/로고/잡아쿠아 영어.png");
+            })
+            $('#main_logo').mouseout(function(){
+                $(this).attr("src","이미지/로고/잡아쿠아 한글.png");
+            })
+        });
+    </script>
+    <script>
+        $(function(){
+            // $('.list_category li').hover(function(){
+            //     // $(this).css("color",'rgb(220, 244, 255)');
+            //     $(this).css("background-color",'rgb(220, 244, 255)');
+            //     },function(){
+            //     $(this).css("background-color",'#e9e5e5');
+            //     });
+            
+            $('.list_category li').mouseover(function(){
+                // $(this).css("color",'rgb(220, 244, 255)');
+                if($(this).css("background-color")!='rgb(222, 241, 243)'){
+                    $(this).css("background-color",'rgb(220, 244, 255)')}
+                });
+
+            $('.list_category li').mouseout(function(){
+                // $(this).css("color",'rgb(220, 244, 255)');
+                if ($(this).css("background-color")!='rgb(222, 241, 243)'){
+                    $(this).css("background-color",'#e9e5e5');}
+            });
+            
+            $('.list_category li').click(function(){
+                // $(this).css("color",'rgb(220, 244, 255)');
+                $('.list_category li').each(function(){
+                    $(this).css("background-color",'#e9e5e5');
+                });
+                $(this).css("background-color",'#def1f3');
+                $(this).css("border",'1px solid #def1f3');
+            })
+        });
+    </script>
+    <script>
+        $(function(){
+            
+            $('.list .cut').mouseover(function(){
+                $(this).find('img').css('transform','scale(1.1)');
+                $(this).find('.md span').css('visibility', 'visible');
+                });
+                
+            $('.list .cut').mouseout(function(){          
+                $(this).find('img').css('transform','scale(1.0)');
+                $(this).find('.md span').css('visibility', 'hidden');
+                });
+            $('.list .cut').hover(function(){
+                $(this).find('.under a').fadeIn(500);
+                },function(){
+                    $(this).find('.under a').fadeOut(500);
+            });
+            $('.under a').css('display','none');
+            // $('#list_md span').css('visibility', 'hidden');
+        });
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+        body{
+            font-family: 'Noto Sans KR',sans-serif;
+        }
+        .logo a:hover{
+            background-image: url('이미지/로고/잡아쿠아\ 영어.png');
+        }
+        .logo a{
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in;
+        }
+        .product_list_color{
+            background-color: rgb(220, 244, 255);
+            margin-left: -8px;
+            margin-right: -8px;
+            height: 650px;
+        }
+        .list_category li{
+            float: left;
+            position: relative;
+            width: 190px;
+            text-align: center;
+            height: 30px;
+            margin: 5px 9px 10px 9px;
+            border: #e9e5e5 1px solid;
+            background-color: #e5e8e9;
+            border-radius: 10px;
+            box-shadow: #f7f7f6 2px 2px;
+        }
+        .list_category li a{
+            padding: 5px 35px 5px 30px;
+            position: relative;
+            line-height: 18px;
+            height: 20px;
+            display: inline-block;
+            color: rgb(55, 53, 53);
+            font-family: '고딕체';
+            font-size: 14.5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #main_banner {
+            width: 3200px;
+            position: relative;
+            list-style: none;
+            margin: 0px;
+            float: left;
+            padding: 0px;     
+            overflow: hidden;
+            height: 430px;   
+        }
+        #b-wrapper{
+            width: 1050px;
+            position: relative;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #b-viewport{
+
+        width: 1050px;
+        position: relative;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        
+        .bx-wrapper{
+
+            margin: 0px ;
+            max-width: 1050px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .bx-viewport{
+
+            width: 1050px;
+            position: relative;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tit_goods{
+            text-align: center;
+            font-size: 23px;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            margin: 0px;
+        }
+        
+        .list li{
+            margin: 0px;
+            float: left;
+            position: relative;
+            margin-right: 18px;
+            height: 400px;
+            width: 249px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            z-index: 1;
+        }
+        .list li a{
+            overflow: hidden;
+            display: inline-block;
+        }
+        .list .sale{
+            margin: 0px;
+            float: left;
+            position: relative;
+            margin-right: 18px;
+            height: 350px;
+            width: 1050px;
+        }
+        .list li img{
+            float: left;
+            position: relative;
+            margin: 0px;
+            width: 249px;
+            height: 249px;
+            transition-duration: 0.5s;           
+        }
+        .list .sale img{
+            float: left;
+            position: relative;
+            margin: 0px;
+            height: 350px;
+            width: 1050px;
+        }
+        .info_goods{
+            font-size: 16px;
+            line-height: 17px;
+            
+        }
+        .name{
+            margin-top: 12px;
+            display: inline-block;
+            
+        }
+        .price{
+            padding-top: 7px;
+            font-weight: bold;
+            display: inline-block;
+            color: rgb(54, 66, 233);
+        }
+        .dc{
+            padding-right: 8px;
+
+            color: #fa622f;
+            padding-left: 10px;
+        }
+        .cost{
+            padding-left: 8px;
+            font-size: 14px;
+            color: #999999;
+            text-decoration-line: line-through;
+            display: inline-block;
+            text-decoration-color: red;
+        }
+        .txt{
+            display: inline-block;
+            width: 249px;
+            height: 20px;
+            border-bottom: black 1px solid;
+            padding-bottom: 5px;
+        }
+        #link img{
+            float: left;
+            position: relative;
+            width: 338px;
+            margin: 0px;
+            height: 320px;
+        }
+        #link li{
+            width: 338px;
+            height: 320px;
+        }
+        .bx-controls{
+            position: absolute; 
+            width: 1050px; 
+            overflow: visible; 
+            margin-top: -330px;
+            z-index: 0
+            
+        }
+        .bx-prev{
+            float: left; 
+            margin-left: -80px;
+        }
+        .bx-next{
+            float: right; 
+            margin-right: -68px;
+        }
+        .sale{
+            width: 1050px;
+        }
+        .moving a{
+            width: 1050px;
+            margin: 0px;
+            display: inline-block;
+            height: 242px;
+            z-index: 4;
+        }
+        .moving img{
+            width: 1050px;
+        }
+        .logo{
+            left: 50%;
+            text-align: center;
+        }
+        h3{
+            width: 1050px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .logo a{
+            background-image: url("이미지/로고/잡아쿠아\ 한글.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 400px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        *:link, *:visited, *:active{
+            text-decoration: none;
+            color: black;
+        }
+        .under{
+            display: block;
+        }
+        .under a{
+            width: 22px;
+            height: 22px;
+            display: inline-block;
+            position: relative;
+            margin-top: 7px;
+            margin-right: 5px;
+            display: none;
+        }
+        .under_cart{
+            background-image: url("이미지/상품아래/장바구니아이콘.png");
+           
+        }
+        .under_wish{
+            background-image: url("이미지/상품아래/찜하기이전.png");
+        }
+        #list_md li{
+            height: 259px;
+            position: relative;
+        }
+        #list_md li span:first-child{
+            z-index: 1;
+            width: 249px;
+            height: 249px;
+            display: inline-block;
+            position: absolute;
+            background-color: black;
+            opacity: 0.5;     
+            visibility: hidden;
+
+        } 
+        #list_md li span+span{
+            width: 249px;
+            height: 249px;
+            display: inline-block;
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            line-height: 249px;  
+            color: white; 
+            font-weight: 400; 
+            visibility:hidden;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="header_logo" style="width: 1050px; margin-left: auto; margin-right: auto;">
+            <h1 class="logo"> 
+                <a href='#none'></a>
+                <!-- <a href='#none'><img id="main_logo" src="이미지/로고/잡아쿠아 한글.png" style="margin-left: auto; margin-right: auto; width: 400px;"></a> -->
+            </h1>
+        </div>
+    </div>
+    <div id="kurlyMain">
+        <div class=" bx-sale" id="b-wrapper" style="max-width: 1050px; height: auto; ">
+            <div id="bx-viewport" style="width: 1050px; position: relative; overflow: hidden; margin-left: auto; margin-right: auto; height: 242px; ">
+                <ul id="main_banner">
+                    <li class="moving sale" id="mb1"><a href="#"><img src="이미지/배너/배너02.png"></a></li>
+                    <li class="moving sale" id="mb2"><a href="#"><img src="이미지/배너/배너01.png"></a></li>
+                    <li class="moving sale" id="mb3"><a href="#"><img src="이미지/배너/배너03.png"></a></li>
+                </ul>
+            </div>
+            <span class="bx-controls" style="width: 1050px; margin-top: -200px;">
+                <a class="bx-prev_2" href ><img src="이미지/화살표/왼쪽.gif" style="margin-left: 40px; opacity: 0;"></a>
+                <a class="bx-next_2" href ><img src="이미지/화살표/오른쪽.gif" style="margin-right: 40px; opacity: 0; float: right"></a>
+            </span>
+        </div>
+        <div class = "product_list">
+            <div class = "tit_goods"><h3><a class="list_name" href='#none'>&nbsp;&nbsp; NEW 열대어 &nbsp;></a></h3></div>
+            <div class = "list_goods">
+                <div class="bx-wrapper">
+                    <div class="bx-viewport">                    
+                        <ul class="list" style="width: 3204px; position:relative; list-style: none; margin: 0px; float: left; padding: 0px;">
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best01.jpg"></a>
+                                <div class="info_goods" >
+                                    <span class="name">
+                                        <a class="txt" href='#none'>장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        61,700원
+                                        <span class="cost">73,500원</span>
+                                    </span>   
+                                    <span class="under">
+                                        <a href='#none' class=under_cart></a>
+                                        <a href='#none' class=under_wish></a>
+                                    </span>                                                                                                             
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best02.png"></a>
+                                <div class="info_goods" >
+                                    <span class="name">
+                                        <a class="txt">장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        61,700원
+                                        <span class="cost">73,500원</span>
+                                    </span>
+                                    <span class="under">
+                                        <a href='#none' class=under_cart></a>
+                                        <a href='#none' class=under_wish></a>
+                                    </span>                                                                                                                               
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best03.png"></a>
+                                <div class="info_goods" >
+                                    <span class="name">
+                                        <a class="txt" href='#none'>장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        61,700원
+                                        <span class="cost">73,500원</span>
+                                    </span>
+                                    <span class="under">
+                                        <a href='#none' class=under_cart></a>
+                                        <a href='#none' class=under_wish></a>
+                                    </span>                                                                                                                            
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best04.jpg"></a>
+                                <div class="info_goods" >
+                                    <span class="name">
+                                        <a class="txt" href='#none'>장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        61,700원
+                                        <span class="cost">73,500원</span>
+                                    </span>
+                                    <span class="under">
+                                        <a href='#none' class=under_cart></a>
+                                        <a href='#none' class=under_wish></a>
+                                    </span>                                                                                                                                
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best01.jpg"></a>
+                                <div class="info_goods" >
+                                    <span class="name">
+                                        <a class="txt" href='#none'>장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        61,700원
+                                        <span class="cost">73,500원</span>
+                                    </span>
+                                    <span class="under">
+                                        <a href='#none' class=under_cart></a>
+                                        <a href='#none' class=under_wish></a>
+                                    </span>                                                                                                                             
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best02.png"></a>
+                                <div class="info_goods" >
+                                    <span class="name">
+                                        <a class="txt" href='#none'>장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        61,700원
+                                        <span class="cost">73,500원</span>
+                                    </span>
+                                    <span class="under">
+                                        <a href='#none' class=under_cart></a>
+                                        <a href='#none' class=under_wish></a>
+                                    </span>                                                                                                                          
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best03.png"></a>
+                                <div class="info_goods" >
+                                    <span class="name">
+                                        <a class="txt" href='#none'>장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        61,700원
+                                        <span class="cost">73,500원</span>
+                                    </span>
+                                    <span class="under">
+                                        <a href='#none' class=under_cart></a>
+                                        <a href='#none' class=under_wish></a>
+                                    </span>                                                                                                                             
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best04.jpg"></a>
+                                <div class="info_goods" >
+                                    <span class="name">
+                                        <a class="txt" href='#none'>장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        61,700원
+                                        <span class="cost">73,500원</span>
+                                    </span>       
+                                    <span class="under">
+                                        <a href='#none' class=under_cart></a>
+                                        <a href='#none' class=under_wish></a>
+                                    </span>                                                                                                                         
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best01.jpg"></a>
+                                <div class="info_goods" >
+                                    <span class="name">
+                                        <a class="txt" href='#none'>장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        61,700원
+                                        <span class="cost">73,500원</span>
+                                    </span>       
+                                    <span class="under">
+                                        <a href='#none' class=under_cart></a>
+                                        <a href='#none' class=under_wish></a>
+                                    </span>                                                                                                                         
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best02.png"></a>
+                                <div class="info_goods" >
+                                    <span class="name">
+                                        <a class="txt" href='#none'>장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        61,700원
+                                        <span class="cost">73,500원</span>
+                                    </span>       
+                                    <span class="under">
+                                        <a href='#none' class=under_cart></a>
+                                        <a href='#none' class=under_wish></a>
+                                    </span>                                                                                                                         
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best03.png"></a>
+                                <div class="info_goods" >
+                                    <span class="name">
+                                        <a class="txt" href='#none'>장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        61,700원
+                                        <span class="cost">73,500원</span>
+                                    </span>      
+                                    <span class="under">
+                                        <a href='#none' class=under_cart></a>
+                                        <a href='#none' class=under_wish></a>
+                                    </span>                                                                                                                          
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best04.jpg"></a>
+                                <div class="info_goods" >
+                                    <span class="name">
+                                        <a class="txt" href='#none'>장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        61,700원
+                                        <span class="cost">73,500원</span>
+                                    </span>                
+                                    <span class="under">
+                                        <a href='#none' class=under_cart></a>
+                                        <a href='#none' class=under_wish></a>
+                                    </span>                                                                                                                
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bx-controls">
+                        <a class="bx-prev" href ><img src="이미지/화살표/왼쪽 누르기전.gif"></a>
+                        <a class="bx-next" href ><img src="이미지/화살표/오른쪽 누르기전.gif"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class = "product_list">
+            <div class = "tit_goods"><h3><a class="list_name" href='#none'> &nbsp;&nbsp;&nbsp; 인기상품 &nbsp;> </a></div>
+            <div class = "list_goods">
+                <div class="bx-wrapper">
+                    <div class="bx-viewport">                    
+                        <ul class="list" id="pl1" style="width: 3900px; position:relative; list-style: none; margin: 0px; float: left; padding: 0px;">
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best01.jpg"></a>
+                                <div class="info_goods">
+                                    <span class="name">
+                                        <a class="txt">장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        <span class="dc">16%</span>61,700원<br>
+                                    </span>
+                                    <span class="cost">73,500원</span>                                 
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best02.png"></a>
+                                <div class="info_goods">
+                                    <span class="name">
+                                        <a class="txt">[밤보네이처] 기저귀 6종 (박스)</a>
+                                    </span>
+                                    <span class="price">
+                                        <span class="dc">16%</span>61,700원<br>
+                                    </span>
+                                    <span class="cost">73,500원</span>                                 
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best03.png"></a>
+                                <div class="info_goods">
+                                    <span class="name">
+                                        <a class="txt">[우리밀] 부침가루 & 튀김가루</a>
+                                    </span>
+                                    <span class="price">
+                                        3,000원<br>
+                                    </span>
+                                    <span class="cost"></span>                                 
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best04.jpg"></a>
+                                <div class="info_goods">
+                                    <span class="name">
+                                        <a class="txt">[김정환홍삼] 6년근 홍삼 정과</a>
+                                    </span>
+                                    <span class="price">
+                                        <span class="dc">10%</span>124,200원<br>
+                                    </span>
+                                    <span class="cost">138,000원</span>                                 
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best05.jpg"></a>
+                                <div class="info_goods">
+                                    <span class="name">
+                                        <a class="txt">[김정환홍삼] 6년근 홍삼 정과</a>
+                                    </span>
+                                    <span class="price">
+                                        <span class="dc">10%</span>124,200원<br>
+                                    </span>
+                                    <span class="cost">138,000원</span>                                 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bx-controls">
+                        <a class="bx-prev" href ><img src="이미지/화살표/왼쪽 누르기전.gif"></a>
+                        <a class="bx-next" href ><img src="이미지/화살표/오른쪽 누르기전.gif"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class = "product_list_color" style="margin-bottom: -24px;">
+            <div class = "tit_goods"><h3>이달의 할인</div>
+            <div class = "list_goods">
+                <div class="bx-wrapper  bx-sale">
+                    <div class="bx-viewport">
+                        <ul class="list"  style="width: 4300px; position:relative; list-style: none; margin: 0px; float: left; padding: 0px;">
+                            <li class="sale"><img src="이미지/스페셜/month01.png">
+                            </li>
+                            <li class="sale"><img src="이미지/스페셜/month02.png">
+                            </li>
+                            <li class="sale"><img src="이미지/스페셜/month03.jpg">
+                            </li>
+                            <li class="sale"><img src="이미지/스페셜/month04.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bx-controls" style="margin-top: -200px;">
+                        <a class="bx-prev_2" href ><img src="이미지/화살표/왼쪽.gif" style="margin-left: 40px; opacity: 0;"></a>
+                        <a class="bx-next_2" href ><img src="이미지/화살표/오른쪽.gif" style="margin-right: 40px; opacity: 0; float: right"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div style="margin-right: auto; margin-left: auto; min-width:1050px; max-width: 2000px; margin-top: 0px; padding-bottom: 5px; position: relative; z-index: -1;"><a href=#><img src="이미지/스페셜/clear01.png" width="100%sss"></a></div> -->
+        <div class = "product_list">
+            <div class = "tit_goods" style="padding-bottom: 0px; margin-top: 10px;"><h3> MD 추천상품 </h3></div>
+            <div class = "category" style="position: relative; height: 120px;">
+                <ul class="list_category" style="width: 1050px; margin: 0 auto; list-style: none; padding: 0px 0px 10px 0px; position: relative;">
+                    <li style=" background-color: #def1f3; border-color: #def1f3;"><a href='#none' style="padding: 5px 70px 5px 70px;">금붕어</a></li>
+                    <li><a href='#none' style="padding: 5px 73px 5px 73px;">구피</a></li>
+                    <li><a href='#none' style="padding: 5px 55px 5px 55px;">플래티/몰리</a></li>
+                    <li><a href='#none' style="padding: 5px 70px 5px 70px;">테트라</a></li>
+                    <li><a href='#none' style="padding: 5px 55px 5px 55px;">베타/구라미</a></li>
+                    <li><a href='#none'>라스보라/레인보우</a></li>
+                    <li><a href='#none' style="padding: 5px 40px 5px 40px;">코리/플레코/캣</a></li>
+                    <li><a href='#none' style="padding: 5px 40px 5px 40px;">엔젤/디스커스</a></li>
+                    <li><a href='#none'>라미네지/시클리드</a></li>
+                    <li><a href='#none'>애완새우/달팽이</a></li>
+                </ul>
+            </div>
+            <div class = "list_goods">
+                <div class="bx-wrapper" style="margin-bottom: 70px;">
+                    <div class="bx-viewport">                    
+                        <ul class="list" id="list_md" style="width: 2136px; position:relative; list-style: none; margin: 0px; float: left; padding: 0px; height: 550px;">
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best01.jpg"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best02.png"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best03.png"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best04.jpg"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best01.jpg"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best02.png"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best03.png"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best04.jpg"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best01.jpg"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best02.png"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best03.png"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best04.jpg"></a>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best01.jpg"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best02.png"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best03.png"></a>
+                            </li>
+                            <li class="cut"><a class="md" href='#none'><span></span><span>아에이오우</span><img src="이미지/베스트/best04.jpg"></a>
+                        </ul>
+                    </div>
+                    <div class="bx-controls" style="margin-top: -315px;">
+                        <a class="bx-prev" href ><img src="이미지/화살표/왼쪽 누르기전.gif"></a>
+                        <a class="bx-next" href ><img src="이미지/화살표/오른쪽 누르기전.gif"></a>
+                    </div>
+                </div>
+            </div>
+        <div class = "product_list">
+            <div class = "tit_goods"><h3><a class="list_name" href='#none'> &nbsp;&nbsp;&nbsp; 베타 - 실물개체 &nbsp;> </a></div>
+            <div class = "list_goods">
+                <div class="bx-wrapper">
+                    <div class="bx-viewport">                    
+                        <ul class="list" id="pl1" style="width: 3900px; position:relative; list-style: none; margin: 0px; float: left; padding: 0px;">
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best01.jpg"></a>
+                                <div class="info_goods">
+                                    <span class="name">
+                                        <a class="txt">장조림</a>
+                                    </span><br>
+                                    <span class="price">
+                                        <span class="dc">16%</span>61,700원<br>
+                                    </span>
+                                    <span class="cost">73,500원</span>                                 
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best02.png"></a>
+                                <div class="info_goods">
+                                    <span class="name">
+                                        <a class="txt">[밤보네이처] 기저귀 6종 (박스)</a>
+                                    </span>
+                                    <span class="price">
+                                        <span class="dc">16%</span>61,700원<br>
+                                    </span>
+                                    <span class="cost">73,500원</span>                                 
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best03.png"></a>
+                                <div class="info_goods">
+                                    <span class="name">
+                                        <a class="txt">[우리밀] 부침가루 & 튀김가루</a>
+                                    </span>
+                                    <span class="price">
+                                        3,000원<br>
+                                    </span>
+                                    <span class="cost"></span>                                 
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best04.jpg"></a>
+                                <div class="info_goods">
+                                    <span class="name">
+                                        <a class="txt">[김정환홍삼] 6년근 홍삼 정과</a>
+                                    </span>
+                                    <span class="price">
+                                        <span class="dc">10%</span>124,200원<br>
+                                    </span>
+                                    <span class="cost">138,000원</span>                                 
+                                </div>
+                            </li>
+                            <li class="cut"><a href='#none'><img src="이미지/베스트/best05.jpg"></a>
+                                <div class="info_goods">
+                                    <span class="name">
+                                        <a class="txt">[김정환홍삼] 6년근 홍삼 정과</a>
+                                    </span>
+                                    <span class="price">
+                                        <span class="dc">10%</span>124,200원<br>
+                                    </span>
+                                    <span class="cost">138,000원</span>                                 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bx-controls">
+                        <a class="bx-prev" href ><img src="이미지/화살표/왼쪽 누르기전.gif"></a>
+                        <a class="bx-next" href ><img src="이미지/화살표/오른쪽 누르기전.gif"></a>
+                    </div>
+                </div>
+            </div>
+            <div class = "product_list">
+                <div class = "tit_goods"><h3><a class="list_name" href='#none'> &nbsp;&nbsp;&nbsp; 프리미엄 오란다 &nbsp;> </a></div>
+                <div class = "list_goods">
+                    <div class="bx-wrapper">
+                        <div class="bx-viewport">                    
+                            <ul class="list" id="pl1" style="width: 3900px; position:relative; list-style: none; margin: 0px; float: left; padding: 0px;">
+                                <li class="cut"><a href='#none'><img src="이미지/베스트/best01.jpg"></a>
+                                    <div class="info_goods">
+                                        <span class="name">
+                                            <a class="txt" href="#none">장조림</a>
+                                        </span><br>
+                                        <span class="price">
+                                            <span class="dc">16%</span>61,700원<br>
+                                        </span>
+                                        <span class="cost">73,500원</span>                                 
+                                    </div>
+                                </li>
+                                <li class="cut"><a href='#none'><img src="이미지/베스트/best02.png"></a>
+                                    <div class="info_goods">
+                                        <span class="name">
+                                            <a class="txt">[밤보네이처] 기저귀 6종 (박스)</a>
+                                        </span>
+                                        <span class="price">
+                                            <span class="dc">16%</span>61,700원<br>
+                                        </span>
+                                        <span class="cost">73,500원</span>                                 
+                                    </div>
+                                </li>
+                                <li class="cut"><a href='#none'><img src="이미지/베스트/best03.png"></a>
+                                    <div class="info_goods">
+                                        <span class="name">
+                                            <a class="txt">[우리밀] 부침가루 & 튀김가루</a>
+                                        </span>
+                                        <span class="price">
+                                            3,000원<br>
+                                        </span>
+                                        <span class="cost"></span>                                 
+                                    </div>
+                                </li>
+                                <li class="cut"><a href='#none'><img src="이미지/베스트/best04.jpg"></a>
+                                    <div class="info_goods">
+                                        <span class="name">
+                                            <a class="txt">[김정환홍삼] 6년근 홍삼 정과</a>
+                                        </span>
+                                        <span class="price">
+                                            <span class="dc">10%</span>124,200원<br>
+                                        </span>
+                                        <span class="cost">138,000원</span>                                 
+                                    </div>
+                                </li>
+                                <li class="cut"><a href='#none'><img src="이미지/베스트/best05.jpg"></a>
+                                    <div class="info_goods">
+                                        <span class="name">
+                                            <a class="txt">[김정환홍삼] 6년근 홍삼 정과</a>
+                                        </span>
+                                        <span class="price">
+                                            <span class="dc">10%</span>124,200원<br>
+                                        </span>
+                                        <span class="cost">138,000원</span>                                 
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bx-controls">
+                            <a class="bx-prev" href ><img src="이미지/화살표/왼쪽 누르기전.gif"></a>
+                            <a class="bx-next" href ><img src="이미지/화살표/오른쪽 누르기전.gif"></a>
+                        </div>
+                    </div>
+                </div>
+            <div class = "tit_goods" style="margin-bottom: 20px;"><h3> 수초 / 유목 </h3></div>
+            <div style="margin-right: auto; margin-left: auto; width: 1050px; margin-top: -30px;"><a href="#"><img src="이미지/스페셜/flowr02.jpg" width="1050px"></a></div>
+            
+            <div class = "list_goods"  style="margin-top: 5px; height: 320px; padding-bottom: 150px;">
+                <div class="bx-wrapper">
+                    <div class="bx-viewport">
+                        <ul class="list" id="link" style="width: 3900px; position:relative; list-style: none; margin: 0px; float: left; padding: 0px;" >
+                            <li class="cut"><a href='#none'><img src="이미지/수초/부상수초.jpg"></a></li>
+                            <li class="cut"><a href='#none'><img src="이미지/수초/씨앗수초.jpg"></a></li>
+                            <li class="cut"><a href='#none'><img src="이미지/수초/전경수초.jpg"></a></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="bx-controls" style="margin-top: -286px;">
+                        <a class="bx-prev" href ><img src="이미지/화살표/왼쪽 누르기전.gif"></a>
+                        <a class="bx-next" href ><img src="이미지/화살표/오른쪽 누르기전.gif"></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div style="margin-right: auto; margin-left: auto; min-width:1050px; max-width: 100%; margin-top: -70px;"><h2 style="text-align: center;"><a href=#><img src="이미지/스페셜/tree01.png" width="1902px" style="margin-left: -7px;"></a></h2></div>
+        <!-- <div class = "product_list" style="padding-top: 50px;">
+            <div class = "list_goods">
+                <div class="bx-wrapper">
+                    <div class="bx-viewport">
+                        <div style="float: left; position: relative;"><h2>구피 기획전</h2></div>
+                        <ul class="list" id="pl1" style="width: auto; position:relative; list-style: none; margin: 0px; float: right; padding: 0px;">
+                            <li class="cut" style="width: 300px; height: 300px; margin-right: 0px;"><img src="이미지/스페셜/guppy01.png" style="width: 300px; height: 300px;">
+
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        </div>
+       
+        
+           
+        
+    </div>
+</body>
+</html>
