@@ -1,0 +1,108 @@
+body{
+    margin: 0px;
+}
+footer *{
+    margin: auto;
+    padding: 0;
+}
+footer .clear{
+    clear: both;
+}
+
+footer *:link,footer *:visited,footer *:active{
+    text-decoration: none;
+    color: black;
+}
+footer th,footer td,footer tr{
+    list-style: none;
+    /* font-size: 14px; */
+    font-family: "noto sans";
+}
+
+
+footer{
+    height: 600px;
+    margin-top: 20px;
+    height: auto;    
+}
+footer #footer_menubox{
+    background-color: rgb(3, 140, 232);
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    float: left;
+}
+footer #footer_menu{
+    padding-top : 10px;
+}
+/* footer #bottom_line{
+    width: 100%;
+    border-bottom: solid 1px black;
+    margin-bottom: 50px;
+} 어떻게해야 적용될까...? */
+footer #footer_menu li{
+    display: inline;
+    margin-left : 15px;
+    font-size: 15px;
+}
+footer #footer_menu a:link{
+    color: black;
+}
+footer #footer_menu a:hover{
+    color: black;
+}
+footer #footer_menu a:visited{
+    color: black;
+}
+footer #footer_menu a:active{
+    color: black;
+}
+footer #footer_box{
+    width: 1080px;
+}
+footer #footer_box div{
+    float : left;
+}
+footer #footer_box #footer_logo img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-bottom: 10px;
+}
+footer #footer_box #footer_info{
+    text-align: left;
+}
+footer #footer_box h3{
+    font-size: 17px;
+}
+footer #footer_box h1{
+    text-align: left;
+    margin-left : 10px;
+}
+footer #footer_box table{
+    margin-top: 15px;
+    border-spacing: 10px;
+}
+footer #footer_box td{
+    font-size: 14px;
+    padding-left: 10px;   
+}
+footer #footer_box #brF{
+    font-size: 10px;
+}
+footer #footer_box h5{
+    margin-top: -15px;
+    color: rgb(190, 190, 190);
+}
+footer #footer_box .quainfo{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: rgb(160, 160, 160);
+    font-size: 12px;
+}
+footer #footer_box .sns{
+    margin-left: 50px;
+    margin-top: 10px;
+}

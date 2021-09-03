@@ -1,0 +1,257 @@
+#detail{
+    width: 1050px;
+}
+#detail .name{
+    font-family: "noto sans";
+    color: #333333;
+    padding: 0px 60px 60px 60px;
+}
+#detail #detailmain{
+    text-align: center;
+    margin: 15px 5px 5px 5px;
+    font-family: "noto sans";
+    font-size: 12px;
+}
+#detail #right{
+    float: right;
+    margin-top: 20px;
+}
+#detail #left{
+    float: left;
+    margin-top: 20px;
+}
+#detail #bg{
+    float: left;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    margin-right: 50px;
+
+}
+#detail #bg .bgimg{
+    width: 400px;
+    height: 400px;
+    position :relative;
+    
+}
+
+.clear{
+    clear: both;
+}
+#detail{
+    font-family: "noto sans";
+    font-size: 12px;
+    color: #333333;
+    background-color: #ffffff;
+    height: auto;
+    width: 1050px;
+}
+#detail *:link, *:visited, *:active{
+    text-decoration: none;
+    color: black;
+}
+#detail th,td,tr{
+    list-style: none;
+    font-size: 14px;
+    font-family: "noto sans";
+}
+
+#detail a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+}
+
+
+#detail div#detail{
+    width: 1050px;
+    height: auto;
+    padding: 0px 0px 0px 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#detail div#name{
+    float: left;
+    text-align: center;
+    font-size: 24px;
+    font-family: "noto sans";
+    color: #333333;
+    width: 560px;
+    height: 68px;
+    margin-left: 20px;
+    border-top: solid 2px black;
+    border-bottom: solid 1px #cccccc;
+    padding: 5px 0 15px 10px;
+}
+
+/*테이블*/
+
+#detail div#tmain{
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    border-bottom: solid 1px black;
+}
+#detail div#tmain table.info{
+    width:550px;
+    height: 273px;
+    padding-left: 20px;
+    margin-top: 0px;
+    border-collapse: collapse;
+}
+#detail div#tmain th.info1{
+    width: 130px;
+    height: 68px;
+    font-size: 20px;
+    font-family: '맑음';
+    border-bottom: solid 1px #cccccc
+}
+#detail div#tmain th.info2{
+    width: 130px;
+    height: 48px;
+    font-size: 15px;
+    border-bottom: solid 1px #cccccc
+}
+#detail div#tmain th.info3{
+    width: 130px;
+    height: 48px;
+    font-size: 15px;
+    border-bottom: solid 1px #cccccc
+}
+#detail div#tmain th.info4{
+    width: 130px;
+    height: 55px;
+    font-size: 15px;
+    border-bottom: solid 1px #cccccc
+}
+#detail div#tmain td.info1{
+    width: 320px;
+    height: 68px;
+    color: red;
+    font-size: 25px;
+    font-family: '맑음';
+    border-bottom: solid 1px #cccccc
+}
+#detail div#tmain td.info2{
+    width: 320px;
+    height: 48px;
+    border-bottom: solid 1px #cccccc
+}
+#detail div#tmain td.info3{
+    width: 320px;
+    height: 48px;
+    font-size: 17px;
+    border-bottom: solid 1px #cccccc
+}
+#detail div#tmain td.info4{
+    width: 320px;
+    height: 55px;
+    border-bottom: solid 1px #cccccc
+}
+#detail div#tinfo{
+    padding-top: 5px;
+}
+#detail p#tinfo{
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+#detail table#money{
+    width: 560px;
+    height: 60px;
+}
+#detail table#money th.tmoney{
+    width: 130px;
+    height: 40px;
+    text-align: left;
+    font-size: 20px;
+    font-family: "견고딕";
+    color: #333333;
+}
+#detail table#money td.tmoney{
+    width: 320px;
+    height: 40px;
+    text-align: right;
+    font-size: 20px;
+    font-family: "견고딕";
+    color: #333333;
+}
+#detail #btn_listadd{
+    position: relative;
+    float: left;
+}
+#detail #btn_soldout{
+    position: relative;
+    float: right;
+}
+#detail .listadd{
+    width: 140px;
+    height: 50px;    
+}
+#detail .soldout{
+    width: 140px;
+    height: 50px;
+}
+
+/* details */
+
+#detail div#detailmenu{
+    width: 1050px;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+/* 디테일 ul 수정본 */
+
+#detail #name li{
+    list-style: none;
+    float: left;
+    display: inline;
+    margin-left: 1px;
+    background-color: rgb(3, 140, 232);
+    padding: 5px;
+    font-size: 20px;
+    width: 160px;
+    height: 30px;
+    font-weight: bold;
+    border-radius : 10px;
+    
+}
+#detail #name li a{
+    color: #cccccc;
+}
+
+
+#detail .detail_info ul{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height: 30px;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: monospace;
+}
+#detail .detail_info li{
+    list-style: none;
+    display: inline;
+    padding: 30px;
+}
+/* #detail .detail_info li a{
+    color: #cccccc;
+} */
+
+#detail .detail_info,
+#detail .target{
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+#detail .target{
+    position: absolute;
+    border-bottom: 4px solid transparent;
+}

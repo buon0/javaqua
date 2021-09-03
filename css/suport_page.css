@@ -1,0 +1,173 @@
+ul{list-style-type: none;}
+a:link, a:visited, a:hover, a:active{text-decoration-line:none; color:black;}
+
+#wrap{
+    width:1050px;
+    margin:0 auto;
+}
+
+#main{
+    padding-top:65px;
+    float:left;
+}
+
+
+#snb{
+    width:200px;
+    float:left;
+}
+#snb ul{
+    list-style-type: none;
+    border:rgb(230, 230, 230) solid 1px;
+    border-bottom:none;
+    padding-left:0px;
+}
+#snb ul a:link li,#snb ul a:visited li,#snb ul a:hover li,#snb ul a:active li{
+    font-size:15px;
+    padding:15px 15px 15px 15px;
+    border-bottom:rgb(230, 230, 230) solid 1px;
+}
+#snb ul a li#now{color:skyblue;}
+#snb ul a:hover li,#snb ul a:active li {color:skyblue;}
+
+#contents{
+    float:left;
+    margin-left: 30px;
+}
+
+#contents #contents_title{
+    float:left;
+    
+}
+#contents #contents_title h2{
+    height:36px;font-weight:700;font-size:24px;line-height:36px;color:#333;letter-spacing:-.5px
+}
+#contents #contents_title h2 span{
+    padding-left:11px;font-size:14px;color:#999;line-height:20px;letter-spacing:-.3px;vertical-align:3px
+}
+
+#main table{
+    width:820px;
+    float:left;
+    border-top:skyblue solid 2px;
+    border-collapse: collapse;
+}
+#main table thead{
+    height: 57.5px;
+}
+#main table thead tr th{
+    display: table-cell;
+    font-size:15px;
+    text-align: center;
+    color:#696969;
+    padding:0px;
+    border-top:skyblue solid 2px;
+    border-bottom: black solid 1px;
+}
+#main table thead tr th#number{
+    width: 8%;
+}
+#main table thead tr th#category{
+    width: 15%;
+}
+#main table thead tr th#title{
+    
+}
+#main table thead tr th#writer{
+    width: 12%;
+}
+#main table thead tr th#write_date{
+    width: 12%;
+}
+#main table thead tr th#view{
+    width: 30px;
+}
+.no_data{
+    text-align: center;
+}
+
+
+table tbody tr td{
+    height: 57px;
+    font-size:13px;
+    color:#727272;
+}
+table tbody tr td.title{
+    text-align:left;
+}
+table tbody tr td{
+    border-bottom:rgb(226, 226, 226) solid 1px;
+}
+table#notice_list tbody tr td{
+    text-align: center;
+}
+table#write_form tbody tr td{
+    text-align:left;
+    text-indent: 5px;
+}
+table#contents_table tbody tr td{
+    text-align: left;
+    text-indent: 5px;
+}
+
+#page_div{
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+#page_select{margin:60px 0 0;text-align:center}
+#page_select a{display:inline-block;width:34px;height:34px;border:1px solid #ddd;border-left:0;vertical-align:top}
+#page_select a:first-child{border-left:1px solid #ddd}
+#page_select a.number{font-weight:700;color:#333;line-height:34px}
+#page_select a.number:hover,#page_select a.number.__active{background-color:#f7f7f7;color:#5f0080}
+#page_select a.first,#page_select a.prev,#page_select a.next,#page_select a.last{background-repeat:no-repeat;background-position:50% 50%;text-indent:-9999px}
+#page_select a.first{background-image:url(https://res.kurly.com/pc/etc/old/images/common/icon-pagination-first.png)}
+#page_select a.prev{background-image:url(https://res.kurly.com/pc/etc/old/images/common/icon-pagination-prev.png)}
+#page_select a.next{background-image:url(https://res.kurly.com/pc/etc/old/images/common/icon-pagination-next.png)} 
+#page_select a.last{background-image:url(https://res.kurly.com/pc/etc/old/images/common/icon-pagination-last.png)}
+#page_select{font-size:0}  
+#page_select a:hover{background-color:#f7f7f7}  
+#page_select a,  
+#page_select strong{font-weight:700;font-size:12px}  
+#page_select a{cursor:pointer}  
+#page_select a:first-child{border-left:0}  
+#page_select a.first:first-child{border-left:1px solid #ddd}
+
+
+div#search_checkbox{
+    margin-top: 30px;
+}
+div#search_checkbox table{
+    width: 820px;
+    border-top:skyblue solid 0.5px;
+}
+
+div#search_checkbox table tbody tr td.input_txt img{
+    position:relative;right:5px;top:-3px;
+}
+
+.search_btn{
+    float:right;
+    top:0;
+    right:0;
+}
+.search_btn input{
+    height: 30px;
+    margin-right:1px;
+    padding:0;
+}
+.search_btn img{
+    float:right;
+}
+div#search_checkbox table tbody tr td.stxt{
+    text-align: left;
+}
+
+div#search_checkbox table tbody tr td.stxt input{
+    margin-left:10px;
+    margin-right:3px;
+    position:relative;
+    top:3px;
+}
+

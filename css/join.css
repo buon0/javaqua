@@ -1,5 +1,5 @@
 
-    #wrap{width: 1050px; margin: 0 auto; min-height: 20vh;}
+    #wrap{width: 1050px; margin: 0 auto; min-height: 20vh; margin-bottom: 200px;}
     .container{width: 640px; margin: 0 auto;}
 
     .tit{padding-top: 10px; font-weight: 900; font-size: 30px; color: #333; text-align: center; letter-spacing: -2.5px;}
@@ -13,9 +13,11 @@
     .tbl_comm .input_chk{padding:0 14px; border: 1px solid #ccc; width: 25px; height: 25px;}
     .tbl_comm .chkText {position: relative; bottom: 7px; font-size: 14px; letter-spacing: -2px;}
     .tbl_comm label {cursor: pointer;}
-    .tbl_comm .btn_conf{position: relative; top: 1.6px; border: 1px solid #005DDE; background: #fff; color: #005DDE; width: 80px; height: 46px; letter-spacing:-1px; cursor: pointer;}
+    .tbl_comm .btn_conf{position: relative; top: 1.6px; border: 1px solid rgb(3, 140, 232); background: #fff; color: rgb(3, 140, 232); width: 80px; height: 46px; letter-spacing:-1px; cursor: pointer;}
     .tbl_comm .btn_call{position: relative; top: 1.6px; border: 1px solid #ddd; background: #fff; color: #ddd; width: 80px; height: 46px; letter-spacing:-1px; cursor: pointer;}
-    .tbl_comm .btn_address{width: 362px; padding: 0 14px; height: 46px; border: 1px solid #005DDE; background: #fff; color: #005DDE; letter-spacing:-1px; cursor: pointer;}
-    .btn_join{width: 250px; padding: 0 14px; height: 46px; border: 1px solid #005DDE; background: #005DDE; color: #fff; letter-spacing:-1px; cursor: pointer; text-align: center;}
-    .tbl_comm .terms{float: right; color: #005DDE; font-size: 14px; letter-spacing: -2px; cursor: pointer;}
+    .tbl_comm .numChk{position: relative; top: 1.6px; border: 1px solid rgb(3, 140, 232); background: #fff; color: rgb(3, 140, 232); width: 80px; height: 46px; letter-spacing:-1px; cursor: pointer;}
+    .tbl_comm .btn_address{width: 362px; padding: 0 14px; height: 46px; border: 1px solid rgb(3, 140, 232); background: #fff; color: rgb(3, 140, 232); letter-spacing:-1px; cursor: pointer;}
+    .btn_join{width: 250px; padding: 0 14px; height: 46px; border: 1px solid rgb(3, 140, 232); background: rgb(3, 140, 232); color: #fff; letter-spacing:-1px; cursor: pointer; text-align: center;}
+    .tbl_comm .terms{float: right; color: rgb(3, 140, 232); font-size: 14px; letter-spacing: -2px; cursor: pointer;}
 
+    

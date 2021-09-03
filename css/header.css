@@ -1,0 +1,434 @@
+body{
+    margin: 0px;
+}
+#header{
+    letter-spacing: -1px;
+    margin: 0px;
+}
+#header *{
+    list-style: none;
+}
+
+#header *:link,#header *:visited,#header *:active{
+    text-decoration: none;
+    color: black;
+}
+#header .frame{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+    height: 45px;
+    /* border: 1px solid black; */
+    position: relative;
+}
+#header #header2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+    height: 140px;
+    /* border: 1px solid black; */
+    position: relative;  
+    
+}
+#header #header3{
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid black; */
+    /* position: relative; */
+    background-color: rgb(3, 140, 232);
+    z-index: 11;
+}
+#header #header3 .frame{
+    height: 60px;
+    z-index: 11;
+
+}
+#header #header3 #view_all{
+    z-index: 11;
+}
+
+#header #header4{
+    position: absolute;
+    top: 200px;
+    z-index: 3;
+    width: 100%;
+    visibility:hidden;
+
+    
+}
+#header #header4 .frame{
+    margin-right: auto;
+    margin-left: auto;
+    /* height: 200px; */
+    /* background-color: blanchedalmond; */
+    z-index: 3;
+}
+#header #header4 .frame .h_menu{
+    width: 220px;
+    height: 420px;
+    background-color: rgb(252, 245, 245);
+    float: left;
+    margin-top: 0px;
+    z-index: 3;
+    transition-duration: 0.3s;
+    opacity: 0;
+    transition-timing-function: ease-in-out;    
+}
+#header #header4 .frame .h_menu #h_menu_gold{
+    position: absolute;
+    left: 210px;  
+    top: 60px;
+    z-index: 11;
+    border: 2px solid rgb(75, 75, 75) ;
+    background-color: rgb(252, 245, 245);
+    padding-left: 5px;
+    visibility: hidden;
+}
+
+#header #header4 .frame .h_menu #h_menu_beta{
+    position: absolute;
+    left: 210px;  
+    top: 197px;
+    z-index: 11;
+    border: 2px solid rgb(75, 75, 75) ;
+    background-color: rgb(252, 245, 245);
+    padding-left: 5px;
+    visibility: hidden;
+}
+#header #header4 .frame .h_menu #h_menu_shirimp{
+    position: absolute;
+    left: 210px;  
+    top: 368px;
+    z-index: 11;
+    border: 2px solid rgb(75, 75, 75) ;
+    background-color: rgb(252, 245, 245);
+    padding-left: 5px;
+    visibility: hidden;
+}
+#header #header4 .frame .h_menu li{
+    padding-bottom: 7px;
+    padding-top: 7px;
+    width: 170px;
+    z-index: 3;
+    padding: 0px;
+}#header #header4 .frame .h_menu li:hover{
+
+}
+#header #header4 .frame .h_menu span{
+    float: right;
+}
+#header #header4 .frame .h_menu h3{
+    padding-bottom: 5px;
+    border-bottom: black 1px solid;
+    width: 170px;
+    z-index: 3;
+}
+#header #header4 .frame .h_menu a{
+    display: inline-block;
+    color: rgb(43, 43, 43);
+    font-size: 15px;
+    width: 170px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#header #b_left{
+    border-left: black 1px solid;
+    border-bottom: solid 1px black;
+    border-top: black 1px solid;
+    z-index: 3;
+}
+#header #b_right{
+    border-right: black 1px solid;
+    border-bottom: solid 1px black;
+    border-top: black 1px solid;
+    z-index: 3;
+}
+#header .logo a{
+    background-image: url("../images/로고/잡아쿠아\ 한글.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 260px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+#header .logo a:hover{
+    background-image: url('../images/로고/잡아쿠아\ 영어.png');
+}
+
+#header .logo{
+    text-align: center;
+    display: inline-block;
+    width: 400px;
+    height: 130px;
+    /* border: black 1px solid; */
+    position: absolute;
+    left:30%;
+    margin-top: 0px;
+    top:5px
+}
+#header #takbae{
+    display: inline-block;
+    margin-top: 9px;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1.5px solid rgb(202, 202, 202);
+    box-shadow: rgb(211, 209, 209) 0.5px 0.5px 0.5px 0.5px;
+}
+#header #takbae a{
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+}
+#header #join_login{
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    
+}
+#header #join_login li{
+    float: left;
+    padding-right: 12px;
+    font-size: 13px;
+    height: 22px;
+
+}
+#header #join_login span{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    right: -8px;
+    background-image: url("../images/헤더/고객센터화살표.webp");
+    background-repeat: no-repeat;
+}
+#header #consumer_center ul{
+    width: 80px;
+    /* height: 100px; */
+    /* display: inline-block; */
+    border: rgb(155, 155, 155) solid 1px;
+    position: absolute;
+    right: 0px;
+    padding: 5px;
+    margin-top: 5px;
+    visibility: hidden;
+    z-index: 20;
+    background-color: white;
+}
+#header #consumer_center li{
+    float: left;
+    padding: 0px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    z-index: 20;
+}
+#header .right_border{
+    padding: 0px 10px 0px 0px;
+    border-right: 1px solid rgb(208, 207, 207);
+}
+#header #notice{
+    position:absolute;
+    bottom: 5px;
+    left: 0px;
+    width: 250px;
+    height: 20px;
+    /* border: 0.5px solid black; */
+}
+#header .title{
+    /* background-image: url('../images/헤더//확성기.png'); */
+    display: inline-block;
+    height: 20px;
+    width: 80px;
+    position: absolute;
+    /* border: 0.5px solid black; */
+    font-size: 13px;
+    position: relative;
+
+}
+
+#header .title #icon{
+    background-image: url('../images/헤더/확성기.png');
+    display: inline-block;
+    height: 15px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    position: absolute;
+    left: 2px;
+}
+#header .title #no{
+    display: inline-block;
+    height: 15px;
+    width: 43px;
+    margin-top: -10px;
+    position: absolute;
+    left: 20px;
+    top: 9.5px;
+}
+#header .content{
+    /* border:black 1px solid; */
+    position: absolute;
+    width: 190px;
+    max-height: 17px;
+    overflow: hidden;
+    left: 55px;
+    bottom: 7px;
+}
+#header .content ul{
+
+    margin: 0px;
+}
+#header .content li{
+    width: 190px;
+    float: right;
+    margin: 0px;
+    font-size: 12px;
+    text-align: right;
+}
+#header .menu{
+    width: 1050px;
+    height: 60px;
+    float: left;
+    
+}
+#header .menu ul{
+    width: 750px;
+    float: left;
+    padding: 0px;
+}
+#header .menu li{
+    width: 140px;
+    height: 60px;
+    float: left;
+    font-size: 18px;
+    margin-top: -16px;
+    text-align: center;
+    font-weight: 600;
+    transition: ease-out;
+    transition-duration: 0.15s;
+}
+/* #header .menu li:nth-child(1){
+    margin-left: 10px;
+} */
+
+#header .menu li a{
+   color: rgb(252, 245, 245);
+   width: 140px;
+    height: 60px;
+    display: inline-block;
+    line-height: 60px;
+
+}
+#header .menu li div{
+    width: 25px;
+    height: 22px;
+    position: absolute;
+    display: inline-block;
+    left: 6px;
+    top:20px;
+    margin-top: 0px;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+#header .menu li span{
+
+}
+#header .menu li #s_1{
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    display: inline-block;
+    left: 0px;
+    top:0px;
+    margin-top: 0px;
+    background-color: white;
+    
+}
+#header .menu li #s_2{
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    display: inline-block;
+    left: 0px;
+    top:9px;
+    margin-top: 0px;
+    background-color: white;
+}
+#header .menu li #s_3{
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    display: inline-block;
+    left: 0px;
+    top:18px;
+    margin-top: 0px;
+    background-color: white;
+}
+#header #side_search{
+    width: 200px;
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+#header #side_search form{
+
+}
+#header #side_search .text_btn{
+    font-size: 12px;
+    padding: 0px;
+    height: 30px;
+    border: none;
+    padding-right: 50px;
+    padding-left: 10px;
+    border-radius: 15px;
+    background-color: rgb(247, 241, 241);
+    outline: none;
+    border: 1px solid rgb(247, 241, 241);
+}
+#header #side_search .search_btn{
+    display: inline-block;
+    width: 30px;
+    position: absolute;
+    right: -2px;
+    top: 2px
+}
+#header #side_search .del_btn{
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    right: 25px;
+    top: 2px;
+    background:url("../images/헤더/삭제버튼.svg") 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    cursor: pointer;
+    border: none;   
+    visibility: hidden;
+    z-index: 3;
+}
+#header .add_fixed_140{
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+}
+#header .add_fixed_200{
+    position: fixed;
+    top: 60px;
+}
+#header .red{
+    color: rgb(218, 40, 40);
+}
+#header #notice_list{
+    transform: translate3d(0px,-16px,0px);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}

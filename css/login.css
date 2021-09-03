@@ -1,0 +1,65 @@
+#login{
+    width: 1050px;
+    height: auto;
+    text-align: center;
+    margin:auto;
+}
+#language_selcet{
+    float: right;
+    margin-right: 270px;
+    padding: 6px;
+    background-color: white;
+    margin-top: 20px;
+}
+#id_login{
+    font-size: 50px;
+    color: rgb(3, 140, 232);
+}
+#input_id{
+    width: 470px;
+    height: 48px;
+    padding-left: 10px;
+}
+#input_password{
+    width: 470px;
+    height: 48px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#save{
+    margin-top: 10px;
+    font-size: 15px;
+}
+#find{
+    color: black;
+    text-decoration: black;
+}
+.button{
+    width: 488px;
+    height: 48px;
+    background-color: rgb(3, 140, 232);
+    margin-top: 10px;
+    border: rgb(3, 140, 232);
+}
+.font_box{
+    font-size: 20px;
+    color: white;
+}
+#line{
+    width: 488px;
+    margin-top: 15px;
+}
+.other_login{
+    width: 488px;
+    height: 48px;
+    background-color: white;
+    border: 1px solid grey;
+    font-size: 17;
+}
+.other_img{
+    width: 17px;
+    height: 17px;
+}
+.clear{
+    clear: both;
+}
