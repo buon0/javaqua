@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javaqua</title>
+    <link href="images/로고/자바쿠아 아이콘.jpg" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
+</head>
+
+<body>
+    <div id="login">
+        <h3 id="id_login">계정 로그인</h3>
+        <form><!-- 아이디 입력 비밀번호 입력 로그인 버튼 회원가입 버튼-->
+            <input type="id" name="id" placeholder="아이디" id="input_id"><br>
+            <input type="password" name="password" placeholder="비밀번호" id="input_password"><br>
+            <div id="save"><input type="checkbox"> 아이디 저장<span style="padding-left: 190px;">
+            <a href="findid.com" id="find"> 아이디 찾기 </a><b>|</b>
+            <a href="findpassword.com" id="find"> 비밀번호 찾기 </a></span><br></div>
+            <a href="로그인 버튼"><button type="submit" name="로그인버튼" class="button"><span class="font_box"><b>로그인</b></span></button></a><br>
+            <a href="회원가입 버튼"><button class="button"> <b><span class="font_box"> 계정이 없으신가요? 회원가입</button></a>
+        </form>
+        <hr id="line">
+        <div>
+            <p> 다른 방법으로 로그인 </p>
+            <a href="facebook.com"><button class="other_login"><img src="images/login/facebook.jpg" alt="" class="other_img"><b> Facebook 로그인</b></button></a><br>
+            <a href="google.com"><button class="other_login" style="margin-top: 10px;"><img src="images/login/google.jpg" alt="" class="other_img"><b> Google 로그인</b></button></a>
+        </div>
+    </div>
+    <div class="clear"></div>
+</body>
+
+</html>
